@@ -10,7 +10,7 @@ numer = math.floor(num)
 denom = 1
 
 def show():
-    print(f'{numer} / {denom}')
+    print(numer + "/" + denom)
 
 # start at floor/1
 #   increment denominator
@@ -38,4 +38,4 @@ while numer / denom != num:
 
 # all done :D
 print('-' * (len(str(numer)) + len(str(denom)) + 3))
-print(f'{numer} / {denom}')
+print(numer + "/" + denom)
