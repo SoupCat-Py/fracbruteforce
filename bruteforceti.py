@@ -1,7 +1,7 @@
 import math
 
 # get the number and stuff
-num = float(input("enter decimal number"))
+num = float(input("enter decimal number "))
 show_denom = True if ("y" in input("show only denominators? y/n ").lower()) else False
 show_all = True if ("y" in input("show all iterations? y/n ").lower()) else False
 
