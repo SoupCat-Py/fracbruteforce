@@ -4,7 +4,7 @@ import argparse  # to get args from the terminal
 
 # add arguments and stuff
 parser = argparse.ArgumentParser()
-parser.add_argument("-n", type=float, required=True, help="input decimal number")
+parser.add_argument("-n", required=True, help="input decimal number. add 'r' to indicate the rest of num repeats")
 parser.add_argument("--show-all", action="store_true", help="show all iterations")
 parser.add_argument("--show-denom", action="store_true", help="only show denominator increments")
 
@@ -13,6 +13,14 @@ all_args = parser.parse_args()
 num = all_args.n
 show_all = all_args.show_all
 show_denom = all_args.show_denom
+
+# check for user input signifying repetition
+if "r" in num:
+    split_num = str(num).split("r")
+    num = split_num[0] + (split_num[1] * 20)
+
+# set to float no matter what
+num = float(num)
 
 ####################################################################################################
 
