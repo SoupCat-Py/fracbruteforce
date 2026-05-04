@@ -2,13 +2,11 @@
 ## About
 goes through thousands of iteations to find equivalent fractions for any rational number (so it can repeat but not something like pi)
 
-The TI version seems to have a really hard time checking if it found the result because it often skips right over the answer. <br/>
-I've ran the same code on a computer and it does not have any trouble, so the problem seems to be with the calculator's version of python.
-
 ## Usage
 ### Terminal
-- **Install the "humanize" module**<br/>
-- Download `bruteforce.py` or clone this repo<br/>
+> [!important]
+> You'll need to install the **humanize** module. I use it to format numbers in a more readable way
+- Download `bruteforce.py` or clone this repo
 - Run `python3 bruteforce.py -n [NUMBER] [--show-denom] [--show-all]`
   - `-n` (required) is the decimal number you want to convert to a fraction
   - `--show-denom` prints every denominator the program goes through
@@ -19,3 +17,6 @@ I've ran the same code on a computer and it does not have any trouble, so the pr
 - Download `bruteforceti.py`
 - Plug in your calculator
 - Drag the file into your calculator and you're done :D
+> [!note]
+> The TI version seems to have a really hard time checking if it found the result because it often skips right over the answer. <br/>
+> I've ran the same code on a computer and it does not have any trouble, so the problem seems to be with the calculator's version of python.
